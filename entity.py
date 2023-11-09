@@ -1,4 +1,4 @@
-"""This defines the network entities, Entity is the abstact description of
+"""This defines the network entities, Entity is the abstract description of
 an Entity where EntityA and EntityB are concrete classes that must be modified
 for this assignment"""
 
@@ -6,6 +6,8 @@ from abc import ABC, abstractmethod
 import inspect
 import packet
 
+
+# noinspection PyShadowingNames
 class Entity(ABC):
     """Abstract concept of an Entity"""
 
@@ -39,8 +41,9 @@ class Entity(ABC):
         """Provided: call this function to send a layer3 packet"""
 
 
+# noinspection PyShadowingNames
 class EntityA(Entity):
-    """Concrete implementaion of EntityA. This entity will receive messages
+    """Concrete implementation of EntityA. This entity will receive messages
     from layer5 and must ensure they make it to layer3 reliably"""
 
     def __init__(self, sim):
@@ -49,19 +52,27 @@ class EntityA(Entity):
 
         # Initialize anything you need here
 
-    def output(self, message):
+    def output(self, message):# This is the application layer actually giving me the message that it wants to have sent out.
         """Called when layer5 wants to introduce new data into the stream"""
         print(f"{self.__class__.__name__}.{inspect.currentframe().f_code.co_name} called.")
         # TODO add some code
+        # First: Let's just try to receive the message from layer 5
+        # print(f"!!!!!!!\n\nOutput Message:\n{message}\n\n!!!!!!!")
+        # That worked. So now it needs to wait for an ACK from the receiver before sending the next message?
 
         pkt = packet.Packet()
         pkt.payload = message
-        self.tolayer3(pkt)
+        pkt.seqnum = 0
+        print(f"\n\npkt: {pkt}\n\n")
+        self.tolayer3(pkt)# Layer 3 is the medium which the packets are send through.
 
     def input(self, packet):
         """Called when the network has a packet for this entity"""
         print(f"{self.__class__.__name__}.{inspect.currentframe().f_code.co_name} called.")
         # TODO add some code
+
+        # packet coming in from the medium?
+        print(f"!!!!!\n\nInput Packet:\n{packet}\n\n!!!!!")
 
     def timerinterrupt(self):
         """called when your timer has expired"""
@@ -93,6 +104,7 @@ class EntityA(Entity):
         return self.__str__()
 
 
+# noinspection PyShadowingNames
 class EntityB(Entity):
     def __init__(self, sim):
         super().__init__(sim)
@@ -106,13 +118,20 @@ class EntityB(Entity):
     def output(self, message):
         print(f"{self.__class__.__name__}.{inspect.currentframe().f_code.co_name} called.")
         # TODO add some code
+        print(f"Got to the EntityB output message:\t{message}")
         pass
 
     # Called when the network has a packet for this entity
     def input(self, packet):
         print(f"{self.__class__.__name__}.{inspect.currentframe().f_code.co_name} called.")
         # TODO add some code
-        self.tolayer5(packet.payload)
+
+        # Looking at the packet coming in from layer3
+        # print(f"!!!!!\n\n pkt coming in from layer3 from sender:\n\t{packet}\n\n!!!!!")
+
+        if packet.seqnum == 1:
+            print("\n\nEntityB input if packet.seqnum: GOT HERE\n\n")
+            self.tolayer5(packet.payload)
 
     # called when your timer has expired
     def timerinterrupt(self):
@@ -129,6 +148,12 @@ class EntityB(Entity):
     def stoptimer(self):
         """Provided: call this function to stop your timer"""
         self.sim.stoptimer(self)
+
+        def factorial(n):
+            if n == 1:
+                return 1
+            else:
+                return n * factorial(n - 1)
 
     def tolayer5(self, data):
         """Provided: call this function when you have data ready for layer5"""

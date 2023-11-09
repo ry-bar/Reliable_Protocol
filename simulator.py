@@ -200,6 +200,7 @@ class Simulator:
 
     def tolayer5(self, entity, message):
         """Receive some data for layer5"""
+        print(f"SUCCESSFULLY SENT TO LAYER 5")
         if self.trace > 2:
             print(f"          TOLAYER5: data received from {entity}: {message}")
 
@@ -272,25 +273,37 @@ def main():
         help="extra credit bidirectional simulation",
     )
     parser.add_argument(
-        "--trace", default=3, type=int, help="set the trace level (0-3)"
+        "--trace",
+        default=2,# Change here
+        type=int,
+        help="set the trace level (0-3)"
     )
-    parser.add_argument("--seed", default=0, type=int, help="set random seed")
+    parser.add_argument("--seed",
+                        default=0,# Change here
+                        type=int,
+                        help="set random seed")
     parser.add_argument(
         "--messages",
-        default=10,
+        default=1,
         type=int,
         help="maximum number of messages to simulate",
     )
     parser.add_argument(
         "--corruptprob",
-        default=0.0,
+        default=0.0,# Change here
         type=float,
         help="corruption probability (0.0 - 1.0)",
     )
     parser.add_argument(
-        "--lossprob", default=0.0, type=float, help="packet loss probaility (0.0 - 1.0)"
+        "--lossprob",
+        default=0.0,# Change here
+        type=float,
+        help="packet loss probaility (0.0 - 1.0)"
     )
-    parser.add_argument("--lambda", default=1, type=float, help="packet arrival rate")
+    parser.add_argument("--lambda",
+                        default=1,# Change here
+                        type=float,
+                        help="packet arrival rate")
     args = parser.parse_args()
     assert args.messages >= 0
     assert args.lossprob >= 0.0 and args.lossprob <= 1.0
