@@ -200,7 +200,6 @@ class Simulator:
 
     def tolayer5(self, entity, message):
         """Receive some data for layer5"""
-        print(f"SUCCESSFULLY SENT TO LAYER 5")
         if self.trace > 2:
             print(f"          TOLAYER5: data received from {entity}: {message}")
 
@@ -284,7 +283,7 @@ def main():
                         help="set random seed")
     parser.add_argument(
         "--messages",
-        default=1,
+        default=3,
         type=int,
         help="maximum number of messages to simulate",
     )
