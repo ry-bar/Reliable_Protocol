@@ -92,6 +92,29 @@ class EntityA(Entity):
         # TODO add some code
         print(f"\n\nGOT ACK PACKET: {packet}\n")
 
+        # TODO: I need to make it so when I receive a duplicate ACK, I just start sending every packet after the needed packet again.
+
+        # Sending the packet to the corresponding ACK.
+        # Checks to make sure the list isn't empty and also checks to see if we get duplicate ACKs
+        # If a duplicate ACK is received, sends the need packet again.
+        if (len(self.ack_received_window) > 0) and (packet.acknum == self.ack_received_window[-1].acknum):
+            print(f"RECEIVED ACK FOR THIS PACKET AGAIN: {self.ack_received_window[-1]}")
+            needed_packet = self.ack_received_window[-1].acknum
+            print(f"SENDING RESPONSE TO NEEDED PACKET: {self.sent_packet_window[needed_packet]}")
+            self.tolayer3(self.sent_packet_window[needed_packet])
+
+        else:# If it's the correct packet, it just adds it to the received list.
+            self.ack_received_window.append(packet)
+
+
+
+
+
+        print("\n\n")
+        for packets in self.ack_received_window:
+            print(f"ack_received_window: {packets}-----------------------------------------------")
+        print("\n\n")
+
 
         # packet coming in from the medium?
         #print(f"!!!!!\n\nInput Packet:\n{packet}\n\n!!!!!")
@@ -142,6 +165,7 @@ class EntityB(Entity):
         # Initialize anything you need here
         print(f"{self.__class__.__name__}.{inspect.currentframe().f_code.co_name} called.")
         self.receiver_packet_window = []
+        self.sent_packet_window = []
 
     # Called when layer5 wants to introduce new data into the stream
     # For EntityB, this function does not need to be filled in unless
@@ -159,36 +183,95 @@ class EntityB(Entity):
         print(f"RECEIVED PACKET: {packet}")
         # TODO add some code
 
-        if packet.seqnum == 999999 or packet.payload[:1] == 'Z':
+        if packet.seqnum == 999999 or packet.payload[:1] == 'Z':# Check for corruption
             print(F"RECEIVED A CORRUPT PACKET: {packet}")
-        else:
+
+            if len(self.receiver_packet_window) > 0:# Check it see if there has already been an ACK sent
+                # Sending the last ACK to the sender
+                self.tolayer3(self.sent_packet_window[-1])
+
+                print(f"SENDING LAST ACK: {self.receiver_packet_window[-1].seqnum}")
+
+            else:# If no ACK has been sent, then we still need the first packet.
+                ack_pkt = pk.Packet()
+                ack_pkt.payload = packet.payload  # Just putting the payload here instead of "" just for debugging
+                ack_pkt.checksum = 0
+                ack_pkt.seqnum = 0
+                ack_pkt.acknum = 0
+
+                # Sending the new ACK to the sender
+                self.tolayer3(ack_pkt)
+                # Adding that packet to the sent_packet_window.
+                self.sent_packet_window.append(ack_pkt)
+
+
+
             # Adding to the receiving window.
-            # TODO: Need to make sure that the window only adds packets in order
-            # TODO: Need to find a way to check the packet.seqnum
-            # TODO: Finished while trying to make sure the ACK being sent to the sender was 1 more than the seq number. 
-            #if self.receiver_packet_window is None:# WARNING: THIS DOESN'T CHECK THE SEQNUM!!!!!!
-                #self.receiver_packet_window.append(packet)
-            #elif self.receiver_packet_window[0]:
-                #print("")
-
-
+            # TODO: Need to have it send out the most recent ACK again if we get the wrong packet.
+        elif packet.seqnum == 0:# Not corrupted but checking to see if it's the first packet.
+            self.receiver_packet_window.append(packet)
 
             # Creating the packet for the ACK
             ack_pkt = pk.Packet()
-            ack_pkt.payload = packet.payload# Just putting the payload here instead of "" just for debugging
+            ack_pkt.payload = packet.payload  # Just putting the payload here instead of "" just for debugging
+            ack_pkt.checksum = 0
+            ack_pkt.seqnum = 0
+            ack_pkt.acknum = packet.seqnum + 1#
+
+            # Sending the new ACK to the sender
+            self.tolayer3(ack_pkt)
+            #Adding that packet to the sent_packet_window.
+            self.sent_packet_window.append(ack_pkt)
+
+            # Sending the payload to layer 5
+            self.tolayer5(packet.payload)
+
+
+
+        # Making sure there is something is the list to check also making sure we have the packets in the correct order
+        elif (len(self.receiver_packet_window) > 0) and (packet.seqnum == self.receiver_packet_window[-1].seqnum + 1):# Seqnum + 1 because we want to see if it's the packet after the last.
+            self.receiver_packet_window.append(packet)# Why am I adding them to this list? How am I using it to move the window?
+
+            # Creating the packet for the ACK
+            ack_pkt = pk.Packet()
+            ack_pkt.payload = packet.payload  # Just putting the payload here instead of "" just for debugging
             ack_pkt.checksum = 0
             ack_pkt.seqnum = 0
             ack_pkt.acknum = packet.seqnum + 1
 
+            # Sending the new ACK to the sender
+            self.tolayer3(ack_pkt)
+            # Adding that packet to the sent_packet_window.
+            self.sent_packet_window.append(ack_pkt)
 
-            self.tolayer3(ack_pkt)  # Can send ACK packets from here with just the ACK number?
+            # Sending the payload to layer 5
             self.tolayer5(packet.payload)
 
-            for packets in self.receiver_packet_window:
-                print(f"receiver_packet_window: {packets}")
+        elif len(self.receiver_packet_window) > 0:# If we get a non-corrupted packet, but it's out of order.
+                # Sending the last ACK to the sender
+                self.tolayer3(self.sent_packet_window[-1])
+
+                print(f"SENDING LAST ACK: {self.receiver_packet_window[-1].seqnum}")
 
 
-        #print(f"\n\nchecksome: {packet.checksum}")
+
+        else:# Trying to see if the first packet gets corrupted. If so, we never send out ACK 1 which causes us to never get the first packet sent again.
+            # Creating the packet for the first missing ACK
+            ack_pkt = pk.Packet()
+            ack_pkt.payload = packet.payload  # Just putting the payload here instead of "" just for debugging
+            ack_pkt.checksum = 0
+            ack_pkt.seqnum = 0
+            ack_pkt.acknum = 0
+
+            # Sending the new ACK to the sender
+            self.tolayer3(ack_pkt)
+            # Adding that packet to the sent_packet_window.
+            self.sent_packet_window.append(ack_pkt)
+
+        print("\n\n")
+        for packets in self.receiver_packet_window:
+            print(f"receiver_packet_window: {packets}----------------------------------------------------")
+        print("\n\n")
 
 
 
