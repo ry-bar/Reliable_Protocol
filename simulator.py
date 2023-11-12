@@ -16,6 +16,7 @@ import argparse
 import random
 import copy
 
+import entity
 from entity import EntityA, EntityB
 
 MSGLEN = 20
@@ -319,7 +320,6 @@ def main():
         args.__dict__["lambda"],
     )
     sim.run()
-
 
 if __name__ == "__main__":
     main()

@@ -96,28 +96,40 @@ class EntityA(Entity):
 
         # Sending the packet to the corresponding ACK.
         # Checks to make sure the list isn't empty and also checks to see if we get duplicate ACKs
-        # If a duplicate ACK is received, sends the need packet again.
+        # If a duplicate ACK is received, sends the next needed packet again.
         if (len(self.ack_received_window) > 0) and (packet.acknum == self.ack_received_window[-1].acknum):
+            # TODO: ENDED LAST SESSION HERE. Trying to prevent that ACK numbers from getting up to the 10,000's.
+            # TODO: Not sure why that's happening. Something to do with EntityB ack_pkt.acknum = packet.acknum +1? 
+            # Determining the needed packet
             print(f"RECEIVED ACK FOR THIS PACKET AGAIN: {self.ack_received_window[-1]}")
             needed_packet = self.ack_received_window[-1].acknum
-            print(f"SENDING RESPONSE TO NEEDED PACKET: {self.sent_packet_window[needed_packet]}")
-            self.tolayer3(self.sent_packet_window[needed_packet])
+            for packets in self.sent_packet_window[needed_packet:]:
+                print(f"RESENDING PACKETS: {packets}")
+                self.tolayer3(packets)
 
-        else:# If it's the correct packet, it just adds it to the received list.
-            self.ack_received_window.append(packet)
+        # else:# If it's the correct packet, it just adds it to the received list.
+        self.ack_received_window.append(packet)# just want to watch all the ACks come in
 
-
+        # TODO: Need to implement what to do after a successful ACK comes through. How does that work with the "window".
 
 
 
         print("\n\n")
-        for packets in self.ack_received_window:
-            print(f"ack_received_window: {packets}-----------------------------------------------")
+        self.window_print()
         print("\n\n")
 
 
         # packet coming in from the medium?
         #print(f"!!!!!\n\nInput Packet:\n{packet}\n\n!!!!!")
+    def window_print(self):
+        print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+        for packets in self.sent_packet_window:
+            print(f"A sent_packet_window: {packets}")
+        print("\n")
+        for packets in self.ack_received_window:
+            print(f"ack_received_window: {packets}")
+        print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+
 
     def timerinterrupt(self):
         """called when your timer has expired"""
@@ -165,7 +177,8 @@ class EntityB(Entity):
         # Initialize anything you need here
         print(f"{self.__class__.__name__}.{inspect.currentframe().f_code.co_name} called.")
         self.receiver_packet_window = []
-        self.sent_packet_window = []
+        self.sent_ack_window = []
+        self.sent_layer_five = []
 
     # Called when layer5 wants to introduce new data into the stream
     # For EntityB, this function does not need to be filled in unless
@@ -180,7 +193,7 @@ class EntityB(Entity):
         print(f"{self.__class__.__name__}.{inspect.currentframe().f_code.co_name} called.")
 
 
-        print(f"RECEIVED PACKET: {packet}")
+        print(f"RECEIVED PACKET: {packet}")# Debugging: DELETE!!!
         # TODO add some code
 
         if packet.seqnum == 999999 or packet.payload[:1] == 'Z':# Check for corruption
@@ -188,13 +201,13 @@ class EntityB(Entity):
 
             if len(self.receiver_packet_window) > 0:# Check it see if there has already been an ACK sent
                 # Sending the last ACK to the sender
-                self.tolayer3(self.sent_packet_window[-1])
+                self.tolayer3(self.sent_ack_window[-1])
 
                 print(f"SENDING LAST ACK: {self.receiver_packet_window[-1].seqnum}")
 
             else:# If no ACK has been sent, then we still need the first packet.
                 ack_pkt = pk.Packet()
-                ack_pkt.payload = packet.payload  # Just putting the payload here instead of "" just for debugging
+                ack_pkt.payload = ""  # Just putting the payload here instead of "" just for debugging
                 ack_pkt.checksum = 0
                 ack_pkt.seqnum = 0
                 ack_pkt.acknum = 0
@@ -202,7 +215,7 @@ class EntityB(Entity):
                 # Sending the new ACK to the sender
                 self.tolayer3(ack_pkt)
                 # Adding that packet to the sent_packet_window.
-                self.sent_packet_window.append(ack_pkt)
+                self.sent_ack_window.append(ack_pkt)
 
 
 
@@ -213,19 +226,19 @@ class EntityB(Entity):
 
             # Creating the packet for the ACK
             ack_pkt = pk.Packet()
-            ack_pkt.payload = packet.payload  # Just putting the payload here instead of "" just for debugging
+            ack_pkt.payload = "" # packet.payload  # Just putting the payload here instead of "" just for debugging
             ack_pkt.checksum = 0
             ack_pkt.seqnum = 0
-            ack_pkt.acknum = packet.seqnum + 1#
-
-            # Sending the new ACK to the sender
-            self.tolayer3(ack_pkt)
-            #Adding that packet to the sent_packet_window.
-            self.sent_packet_window.append(ack_pkt)
+            ack_pkt.acknum = packet.acknum + 1
 
             # Sending the payload to layer 5
             self.tolayer5(packet.payload)
+            self.sent_layer_five.append(packet)
 
+            # Adding that packet to the sent_packet_window.
+            self.sent_ack_window.append(ack_pkt)
+            # Sending the new ACK to the sender
+            self.tolayer3(ack_pkt)
 
 
         # Making sure there is something is the list to check also making sure we have the packets in the correct order
@@ -234,22 +247,26 @@ class EntityB(Entity):
 
             # Creating the packet for the ACK
             ack_pkt = pk.Packet()
-            ack_pkt.payload = packet.payload  # Just putting the payload here instead of "" just for debugging
+            ack_pkt.payload = ""  # Just putting the payload here instead of "" just for debugging
             ack_pkt.checksum = 0
             ack_pkt.seqnum = 0
-            ack_pkt.acknum = packet.seqnum + 1
+            ack_pkt.acknum = packet.acknum + 1
+
+            # Sending the payload to layer 5
+            self.tolayer5(packet.payload)
+            # Adding that packet to the sent_packet_window.
+            self.sent_layer_five.append(packet)
 
             # Sending the new ACK to the sender
             self.tolayer3(ack_pkt)
             # Adding that packet to the sent_packet_window.
-            self.sent_packet_window.append(ack_pkt)
+            self.sent_ack_window.append(ack_pkt)
 
-            # Sending the payload to layer 5
-            self.tolayer5(packet.payload)
+
 
         elif len(self.receiver_packet_window) > 0:# If we get a non-corrupted packet, but it's out of order.
                 # Sending the last ACK to the sender
-                self.tolayer3(self.sent_packet_window[-1])
+                self.tolayer3(self.sent_ack_window[-1])
 
                 print(f"SENDING LAST ACK: {self.receiver_packet_window[-1].seqnum}")
 
@@ -258,7 +275,7 @@ class EntityB(Entity):
         else:# Trying to see if the first packet gets corrupted. If so, we never send out ACK 1 which causes us to never get the first packet sent again.
             # Creating the packet for the first missing ACK
             ack_pkt = pk.Packet()
-            ack_pkt.payload = packet.payload  # Just putting the payload here instead of "" just for debugging
+            ack_pkt.payload = "" # packet.payload  # Just putting the payload here instead of "" just for debugging
             ack_pkt.checksum = 0
             ack_pkt.seqnum = 0
             ack_pkt.acknum = 0
@@ -266,15 +283,27 @@ class EntityB(Entity):
             # Sending the new ACK to the sender
             self.tolayer3(ack_pkt)
             # Adding that packet to the sent_packet_window.
-            self.sent_packet_window.append(ack_pkt)
+            self.sent_ack_window.append(ack_pkt)
 
         print("\n\n")
+        self.window_print()
+        print("\n\n")
+
+
+
+
+
+    def window_print(self):
+        print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
         for packets in self.receiver_packet_window:
-            print(f"receiver_packet_window: {packets}----------------------------------------------------")
-        print("\n\n")
-
-
-
+            print(f"B receiver_packet_window: {packets}")
+        print("\n")
+        for packets in self.sent_ack_window:
+            print(f"sent_ack_window: {packets}")
+        print("\n")
+        for packets in self.sent_layer_five:
+            print(f"B sent_layer_five: {packets}")
+        print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
     # called when your timer has expired
     def timerinterrupt(self):
