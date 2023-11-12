@@ -74,6 +74,13 @@ class EntityA(Entity):
         # Appending the seqnum into the set_packet_window.
         self.tolayer3(pkt)  # Layer 3 is the medium which the packets are send through.
 
+        # Starting the timer
+        if pkt.seqnum == 0:
+            print("START TIMER 1")
+            self.starttimer(100)
+
+
+
         # Adding the packet to the sent_packet_window
         self.sent_packet_window.append(pkt)
 
@@ -83,10 +90,13 @@ class EntityA(Entity):
         # Incrementing the ACK num so the receiver knows which ACK number to send back.
         self.inc_acknum += 1
 
-        # Starting the timer
-        self.starttimer(1)
 
-    # TODO: Need to get the timer implemented somehow.  
+
+    # TODO: Need to get the timer implemented somehow.
+    # TODO: How can I start the timer on the first packet only?
+    # TODO: Currently the packets get sent, but then the last of the ACKs never comes through to the receiver because the
+    # TODO: timerinterrupt function keeps sending the packs that are in the sent_packets_window, which haven't been updated
+    # TODO: because of the interrupt. 
 
     def input(self, packet):
         """Called when the network has a packet for this entity"""
@@ -103,19 +113,30 @@ class EntityA(Entity):
                 for packets in self.sent_packet_window:
                     print(f"RESENDING PACKETS: {packets}")
                     self.tolayer3(packets)
+                print("START TIMER 2")
+                # self.stoptimer()
+                # self.starttimer(100)
 
 
             elif (len(self.ack_received_window) > 0) and (packet.acknum == self.ack_received_window[-1].acknum):
                 # Determining the needed packet
                 print(f"RECEIVED ACK FOR THIS PACKET AGAIN: {self.ack_received_window[-1]}")
                 needed_packet = self.ack_received_window[-1].acknum
+                # Resending all the packets that have not been ACKed yet.
                 for packets in self.sent_packet_window:
                     print(f"RESENDING PACKETS: {packets}")
                     self.tolayer3(packets)
+                print("START TIMER 3")
+                # Resetting the timer
+                # self.stoptimer()
+                # self.starttimer(100)
 
             elif packet.acknum == self.sent_packet_window[0].acknum + 1:
                 print(f"POPPING PACKET: {self.sent_packet_window[0]}")
-                #self.stoptimer()
+                # Resetting the timer
+                print("START TIMER 4")
+                # self.stoptimer()
+                # self.starttimer(100)
                 self.sent_packet_window.pop(0)
                 self.ack_received_window.append(packet)# just want to watch all the ACks come in
 
@@ -142,6 +163,16 @@ class EntityA(Entity):
         """called when your timer has expired"""
         print(f"{self.__class__.__name__}.{inspect.currentframe().f_code.co_name} called.")
         print("RIGHT NOW THE TIMERINTERRUPT CODE WOULD RUN")
+        # Resending all the packets that have not been ACKed yet.
+        timer_var = 0
+        for packets in self.sent_packet_window:
+            print(f"RESENDING PACKETS: {packets}")
+            self.tolayer3(packets)
+            if timer_var == 0:
+                print("START TIMER 5")
+                self.starttimer(100)
+                timer_var += 2
+
 
     # From here down are functions you may call that interact with the simulator.
     # You should not need to modify these functions.
