@@ -64,7 +64,6 @@ class EntityA(Entity):
         """Called when layer5 wants to introduce new data into the stream"""
         print(f"{self.__class__.__name__}.{inspect.currentframe().f_code.co_name} called.")
         # TODO add some code
-
         # Creating the packet
         pkt = pk.Packet()
         pkt.payload = message
@@ -72,12 +71,11 @@ class EntityA(Entity):
         pkt.seqnum = self.inc_seqnum
         pkt.acknum = self.inc_acknum
 
+        # Appending the seqnum into the set_packet_window.
+        self.tolayer3(pkt)  # Layer 3 is the medium which the packets are send through.
 
         # Adding the packet to the sent_packet_window
         self.sent_packet_window.append(pkt)
-
-        # Appending the seqnum into the set_packet_window.
-        self.tolayer3(pkt)# Layer 3 is the medium which the packets are send through.
 
         # Incrementing the sequence number for the next packet
         self.inc_seqnum += 1
@@ -85,6 +83,10 @@ class EntityA(Entity):
         # Incrementing the ACK num so the receiver knows which ACK number to send back.
         self.inc_acknum += 1
 
+        # Starting the timer
+        self.starttimer(1)
+
+    # TODO: Need to get the timer implemented somehow.  
 
     def input(self, packet):
         """Called when the network has a packet for this entity"""
@@ -92,25 +94,30 @@ class EntityA(Entity):
         # TODO add some code
         print(f"\n\nGOT ACK PACKET: {packet}\n")
 
-        # TODO: I need to make it so when I receive a duplicate ACK, I just start sending every packet after the needed packet again.
-
         # Sending the packet to the corresponding ACK.
         # Checks to make sure the list isn't empty and also checks to see if we get duplicate ACKs
         # If a duplicate ACK is received, sends the next needed packet again.
-        if (len(self.ack_received_window) > 0) and (packet.acknum == self.ack_received_window[-1].acknum):
-            # TODO: ENDED LAST SESSION HERE. Trying to prevent that ACK numbers from getting up to the 10,000's.
-            # TODO: Not sure why that's happening. Something to do with EntityB ack_pkt.acknum = packet.acknum +1? 
-            # Determining the needed packet
-            print(f"RECEIVED ACK FOR THIS PACKET AGAIN: {self.ack_received_window[-1]}")
-            needed_packet = self.ack_received_window[-1].acknum
-            for packets in self.sent_packet_window[needed_packet:]:
-                print(f"RESENDING PACKETS: {packets}")
-                self.tolayer3(packets)
+        if packet.acknum < 999999:
+            if packet.acknum == 0:
+                # Resending from the first packet.
+                for packets in self.sent_packet_window:
+                    print(f"RESENDING PACKETS: {packets}")
+                    self.tolayer3(packets)
 
-        # else:# If it's the correct packet, it just adds it to the received list.
-        self.ack_received_window.append(packet)# just want to watch all the ACks come in
 
-        # TODO: Need to implement what to do after a successful ACK comes through. How does that work with the "window".
+            elif (len(self.ack_received_window) > 0) and (packet.acknum == self.ack_received_window[-1].acknum):
+                # Determining the needed packet
+                print(f"RECEIVED ACK FOR THIS PACKET AGAIN: {self.ack_received_window[-1]}")
+                needed_packet = self.ack_received_window[-1].acknum
+                for packets in self.sent_packet_window:
+                    print(f"RESENDING PACKETS: {packets}")
+                    self.tolayer3(packets)
+
+            elif packet.acknum == self.sent_packet_window[0].acknum + 1:
+                print(f"POPPING PACKET: {self.sent_packet_window[0]}")
+                #self.stoptimer()
+                self.sent_packet_window.pop(0)
+                self.ack_received_window.append(packet)# just want to watch all the ACks come in
 
 
 
@@ -134,6 +141,7 @@ class EntityA(Entity):
     def timerinterrupt(self):
         """called when your timer has expired"""
         print(f"{self.__class__.__name__}.{inspect.currentframe().f_code.co_name} called.")
+        print("RIGHT NOW THE TIMERINTERRUPT CODE WOULD RUN")
 
     # From here down are functions you may call that interact with the simulator.
     # You should not need to modify these functions.
@@ -196,16 +204,26 @@ class EntityB(Entity):
         print(f"RECEIVED PACKET: {packet}")# Debugging: DELETE!!!
         # TODO add some code
 
-        if packet.seqnum == 999999 or packet.payload[:1] == 'Z':# Check for corruption
+        # Filtering out the packets that Entity has already received and sent to layer 5.
+        # for packets in self.sent_layer_five:
+        #     if packet.seqnum == packets.seqnum or packet.acknum == packets.acknum:
+        #         print(f"IGNORING DUPLICATE PACKET: {packet}")
+        #         break
+
+
+        if any(packet.seqnum == packets.seqnum or packet.acknum == packets.acknum for packets in self.sent_layer_five):
+            print(f"IGNORING DUPLICATE PACKET: {packet}")
+
+        elif (packet.seqnum == 999999 or packet.acknum == 999999) or packet.payload[:1] == 'Z':# Check for corruption
             print(F"RECEIVED A CORRUPT PACKET: {packet}")
 
             if len(self.receiver_packet_window) > 0:# Check it see if there has already been an ACK sent
                 # Sending the last ACK to the sender
                 self.tolayer3(self.sent_ack_window[-1])
 
-                print(f"SENDING LAST ACK: {self.receiver_packet_window[-1].seqnum}")
+                print(f"SENDING LAST ACK: {self.receiver_packet_window[-1].acknum + 1}")
 
-            else:# If no ACK has been sent, then we still need the first packet.
+            elif len(self.receiver_packet_window) < 0:# If no ACK has been sent, then we still need the first packet.
                 ack_pkt = pk.Packet()
                 ack_pkt.payload = ""  # Just putting the payload here instead of "" just for debugging
                 ack_pkt.checksum = 0
@@ -217,10 +235,17 @@ class EntityB(Entity):
                 # Adding that packet to the sent_packet_window.
                 self.sent_ack_window.append(ack_pkt)
 
+        # elif (len(self.sent_layer_five) > 0) and (packet.acknum == self.sent_layer_five[-1].acknum):
+        #     # Do nothing
+        #     print(f"IGNORING DUPLICATE PACKET: {packet}")
+
+
+        elif any(packet.seqnum == packets.seqnum or packet.acknum == packets.acknum for packets in self.sent_layer_five):
+            print(f"IGNORING DUPLICATE PACKET: {packet}")
+
 
 
             # Adding to the receiving window.
-            # TODO: Need to have it send out the most recent ACK again if we get the wrong packet.
         elif packet.seqnum == 0:# Not corrupted but checking to see if it's the first packet.
             self.receiver_packet_window.append(packet)
 
@@ -268,7 +293,7 @@ class EntityB(Entity):
                 # Sending the last ACK to the sender
                 self.tolayer3(self.sent_ack_window[-1])
 
-                print(f"SENDING LAST ACK: {self.receiver_packet_window[-1].seqnum}")
+                print(f"SENDING LAST ACK: {self.receiver_packet_window[-1].acknum + 1}")
 
 
 

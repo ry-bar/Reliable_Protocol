@@ -290,13 +290,13 @@ def main():
     )
     parser.add_argument(
         "--corruptprob",
-        default=0.40,# Change here
+        default=0.0,# Change here
         type=float,
         help="corruption probability (0.0 - 1.0)",
     )
     parser.add_argument(
         "--lossprob",
-        default=0.0,# Change here
+        default=0.4,# Change here
         type=float,
         help="packet loss probaility (0.0 - 1.0)"
     )
