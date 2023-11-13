@@ -274,7 +274,7 @@ def main():
     )
     parser.add_argument(
         "--trace",
-        default=1,# Change here
+        default=2,# Change here
         type=int,
         help="set the trace level (0-3)"
     )
@@ -284,19 +284,19 @@ def main():
                         help="set random seed")
     parser.add_argument(
         "--messages",
-        default=6,
+        default=20,
         type=int,
         help="maximum number of messages to simulate",
     )
     parser.add_argument(
         "--corruptprob",
-        default=0.0,# Change here
+        default=0.2,# Change here
         type=float,
         help="corruption probability (0.0 - 1.0)",
     )
     parser.add_argument(
         "--lossprob",
-        default=0.4,# Change here
+        default=0.2,# Change here
         type=float,
         help="packet loss probaility (0.0 - 1.0)"
     )
