@@ -60,6 +60,7 @@ class EntityA(Entity):
         self.inc_acknum = 0
 
 
+
     def output(self, message):# This is the application layer actually giving me the message that it wants to have sent out.
         """Called when layer5 wants to introduce new data into the stream"""
         print(f"{self.__class__.__name__}.{inspect.currentframe().f_code.co_name} called.")
@@ -71,13 +72,15 @@ class EntityA(Entity):
         pkt.seqnum = self.inc_seqnum
         pkt.acknum = self.inc_acknum
 
+
         # Appending the seqnum into the set_packet_window.
         self.tolayer3(pkt)  # Layer 3 is the medium which the packets are send through.
 
         # Starting the timer
         if pkt.seqnum == 0:
-            print("START TIMER 1")
-            self.starttimer(100)
+            if len(self.sent_packet_window) == 0:
+                print("START TIMER 1")
+                self.starttimer(10)
 
 
 
@@ -113,9 +116,6 @@ class EntityA(Entity):
                 for packets in self.sent_packet_window:
                     print(f"RESENDING PACKETS: {packets}")
                     self.tolayer3(packets)
-                print("START TIMER 2")
-                # self.stoptimer()
-                # self.starttimer(100)
 
 
             elif (len(self.ack_received_window) > 0) and (packet.acknum == self.ack_received_window[-1].acknum):
@@ -126,20 +126,18 @@ class EntityA(Entity):
                 for packets in self.sent_packet_window:
                     print(f"RESENDING PACKETS: {packets}")
                     self.tolayer3(packets)
-                print("START TIMER 3")
-                # Resetting the timer
-                # self.stoptimer()
-                # self.starttimer(100)
+
 
             elif packet.acknum == self.sent_packet_window[0].acknum + 1:
                 print(f"POPPING PACKET: {self.sent_packet_window[0]}")
-                # Resetting the timer
-                print("START TIMER 4")
-                # self.stoptimer()
-                # self.starttimer(100)
+                self.stoptimer()
                 self.sent_packet_window.pop(0)
                 self.ack_received_window.append(packet)# just want to watch all the ACks come in
 
+
+
+                if len(self.sent_packet_window) > 0:
+                    self.starttimer(10)
 
 
         print("\n\n")
@@ -168,10 +166,7 @@ class EntityA(Entity):
         for packets in self.sent_packet_window:
             print(f"RESENDING PACKETS: {packets}")
             self.tolayer3(packets)
-            if timer_var == 0:
-                print("START TIMER 5")
-                self.starttimer(100)
-                timer_var += 2
+        self.starttimer(10)
 
 
     # From here down are functions you may call that interact with the simulator.
@@ -241,8 +236,7 @@ class EntityB(Entity):
         #         print(f"IGNORING DUPLICATE PACKET: {packet}")
         #         break
 
-
-        if any(packet.seqnum == packets.seqnum or packet.acknum == packets.acknum for packets in self.sent_layer_five):
+        if any(packet.seqnum == received_packet.seqnum for received_packet in self.sent_layer_five):
             print(f"IGNORING DUPLICATE PACKET: {packet}")
 
         elif (packet.seqnum == 999999 or packet.acknum == 999999) or packet.payload[:1] == 'Z':# Check for corruption
