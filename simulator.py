@@ -284,7 +284,7 @@ def main():
                         help="set random seed")
     parser.add_argument(
         "--messages",
-        default=20,
+        default=25,
         type=int,
         help="maximum number of messages to simulate",
     )
@@ -301,7 +301,7 @@ def main():
         help="packet loss probaility (0.0 - 1.0)"
     )
     parser.add_argument("--lambda",
-                        default=1,# Change here
+                        default=5,# Change here
                         type=float,
                         help="packet arrival rate")
     args = parser.parse_args()

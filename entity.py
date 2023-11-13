@@ -103,21 +103,19 @@ class EntityA(Entity):
 
             #elif (len(self.ack_received_window) > 0) and (packet.acknum == self.ack_received_window[-1].acknum):
             elif any(packet.acknum == packets.acknum for packets in self.ack_received_window):
-                # # Determining the needed packet
-                # # print(f"RECEIVED ACK FOR THIS PACKET AGAIN: {self.ack_received_window[-1]}")
-                # # Resending first 4 packets that have not been ACKed yet.
-                # # Start index for resending
-                # start_index = self.ack_received_window[-1].seqnum
-                #
-                # # End index, ensuring not to exceed the list length
-                # end_index = min(start_index + 4, len(self.sent_packet_window))
-                #
-                # # Resend up to 4 packets starting from start_index
-                # for packet in self.sent_packet_window[start_index:end_index]:
-                #     #print(f"RESENDING PACKETS: {packet}")
-                #     self.tolayer3(packet)
-                self.resend_packets()
+                # Determining the needed packet
+                # print(f"RECEIVED ACK FOR THIS PACKET AGAIN: {self.ack_received_window[-1]}")
+                # Resending first 4 packets that have not been ACKed yet.
+                # Start index for resending
+                #start_index = self.ack_received_window[-1].seqnum
 
+                # End index, ensuring not to exceed the list length
+                #end_index = min(start_index + 4, len(self.sent_packet_window))
+
+                # Resend up to 4 packets starting from start_index
+                for packet in self.sent_packet_window:
+                    #print(f"RESENDING PACKETS: {packet}")
+                    self.tolayer3(packet)
 
             # If the ACK is the correct ACK needed.
             elif packet.acknum == self.sent_packet_window[0].acknum + 1:
@@ -126,8 +124,8 @@ class EntityA(Entity):
                 self.sent_packet_window.pop(0)# Removing the packet out of the window
                 self.ack_received_window.append(packet)# just want to watch all the ACks come in
 
-                # if len(self.sent_packet_window) > 0:# If there is still a packet in the window being waited on.
-                #             self.starttimer(10)
+                if len(self.sent_packet_window) > 0:# If there is still a packet in the window being waited on.
+                            self.starttimer(10)
 
         # print("\n\n")
         # self.window_print()
@@ -146,25 +144,12 @@ class EntityA(Entity):
         print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
 
-    def resend_packets(self):
-        # Set start index based on last ACK or 0 if none
-        start_index = self.ack_received_window[-1].seqnum if self.ack_received_window else 0
-        # Resend packets in chunks of 4
-        while start_index < len(self.sent_packet_window):
-            # Determine end index for the current chunk
-            end_index = min(start_index + 4, len(self.sent_packet_window))
-            # Resend packets in the current chunk
-            for packet in self.sent_packet_window[start_index:end_index]:
-                self.tolayer3(packet)  # Send packet
-            # Update start index for the next chunk
-            start_index = end_index
-
-
     def timerinterrupt(self):
         """called when your timer has expired"""
         print(f"{self.__class__.__name__}.{inspect.currentframe().f_code.co_name} called.")
         #print("RIGHT NOW THE TIMERINTERRUPT CODE WOULD RUN")
-        self.resend_packets()
+        for packets in self.sent_packet_window:
+            self.tolayer3(packets)
 
 
     # From here down are functions you may call that interact with the simulator.

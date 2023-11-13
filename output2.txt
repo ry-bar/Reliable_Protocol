@@ -1,0 +1,1256 @@
+EntityA.__init__ called.
+EntityB.__init__ called.
+eventlist
+-------------------------
+FromLayer5(8.444218515250482, EntityA)
+-------------------------
+FromLayer5(8.444218515250482, EntityA)
+eventlist
+-------------------------
+FromLayer5(16.023762544653508, EntityA)
+-------------------------
+EntityA.output called.
+eventlist
+-------------------------
+FromLayer3(11.774469267887152, EntityB, Packet(acknum=0, seqnum=0, checksum=0, payload=AAAAAAAAAAAAAAAAAAAA))
+FromLayer5(16.023762544653508, EntityA)
+-------------------------
+eventlist
+-------------------------
+FromLayer3(11.774469267887152, EntityB, Packet(acknum=0, seqnum=0, checksum=0, payload=AAAAAAAAAAAAAAAAAAAA))
+FromLayer5(16.023762544653508, EntityA)
+TimerEvent(18.444218515250483, EntityA)
+-------------------------
+FromLayer3(11.774469267887152, EntityB, Packet(acknum=0, seqnum=0, checksum=0, payload=AAAAAAAAAAAAAAAAAAAA))
+EntityB.input called.
+eventlist
+-------------------------
+FromLayer5(16.023762544653508, EntityA)
+TimerEvent(18.444218515250483, EntityA)
+FromLayer3(19.828656569200106, EntityA, Packet(acknum=1, seqnum=0, checksum=0, payload=))
+-------------------------
+FromLayer5(16.023762544653508, EntityA)
+eventlist
+-------------------------
+TimerEvent(18.444218515250483, EntityA)
+FromLayer3(19.828656569200106, EntityA, Packet(acknum=1, seqnum=0, checksum=0, payload=))
+FromLayer5(20.789732086177068, EntityA)
+-------------------------
+EntityA.output called.
+eventlist
+-------------------------
+TimerEvent(18.444218515250483, EntityA)
+FromLayer3(19.828656569200106, EntityA, Packet(acknum=1, seqnum=0, checksum=0, payload=))
+FromLayer5(20.789732086177068, EntityA)
+FromLayer3(25.196778511411523, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+-------------------------
+TimerEvent(18.444218515250483, EntityA)
+EntityA.timerinterrupt called.
+eventlist
+-------------------------
+FromLayer3(19.828656569200106, EntityA, Packet(acknum=1, seqnum=0, checksum=0, payload=))
+FromLayer5(20.789732086177068, EntityA)
+FromLayer3(25.196778511411523, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(32.99901634882654, EntityB, Packet(acknum=0, seqnum=0, checksum=0, payload=AAAAAAAAAAAAAAAAAAAA))
+-------------------------
+eventlist
+-------------------------
+FromLayer3(19.828656569200106, EntityA, Packet(acknum=1, seqnum=0, checksum=0, payload=))
+FromLayer5(20.789732086177068, EntityA)
+FromLayer3(25.196778511411523, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(32.99901634882654, EntityB, Packet(acknum=0, seqnum=0, checksum=0, payload=AAAAAAAAAAAAAAAAAAAA))
+FromLayer3(42.1867326525407, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+-------------------------
+FromLayer3(19.828656569200106, EntityA, Packet(acknum=1, seqnum=0, checksum=0, payload=))
+EntityA.input called.
+eventlist
+-------------------------
+FromLayer5(20.789732086177068, EntityA)
+FromLayer3(25.196778511411523, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+TimerEvent(29.828656569200106, EntityA)
+FromLayer3(32.99901634882654, EntityB, Packet(acknum=0, seqnum=0, checksum=0, payload=AAAAAAAAAAAAAAAAAAAA))
+FromLayer3(42.1867326525407, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+-------------------------
+FromLayer5(20.789732086177068, EntityA)
+eventlist
+-------------------------
+FromLayer3(25.196778511411523, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer5(28.891904446142963, EntityA)
+TimerEvent(29.828656569200106, EntityA)
+FromLayer3(32.99901634882654, EntityB, Packet(acknum=0, seqnum=0, checksum=0, payload=AAAAAAAAAAAAAAAAAAAA))
+FromLayer3(42.1867326525407, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+-------------------------
+EntityA.output called.
+eventlist
+-------------------------
+FromLayer3(25.196778511411523, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer5(28.891904446142963, EntityA)
+TimerEvent(29.828656569200106, EntityA)
+FromLayer3(32.99901634882654, EntityB, Packet(acknum=0, seqnum=0, checksum=0, payload=AAAAAAAAAAAAAAAAAAAA))
+FromLayer3(42.1867326525407, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(45.978060776414694, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+-------------------------
+FromLayer3(25.196778511411523, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+EntityB.input called.
+eventlist
+-------------------------
+FromLayer5(28.891904446142963, EntityA)
+TimerEvent(29.828656569200106, EntityA)
+FromLayer3(32.352633898650495, EntityA, Packet(acknum=2, seqnum=0, checksum=0, payload=))
+FromLayer3(32.99901634882654, EntityB, Packet(acknum=0, seqnum=0, checksum=0, payload=AAAAAAAAAAAAAAAAAAAA))
+FromLayer3(42.1867326525407, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(45.978060776414694, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+-------------------------
+FromLayer5(28.891904446142963, EntityA)
+eventlist
+-------------------------
+TimerEvent(29.828656569200106, EntityA)
+FromLayer5(29.89891652682662, EntityA)
+FromLayer3(32.352633898650495, EntityA, Packet(acknum=2, seqnum=0, checksum=0, payload=))
+FromLayer3(32.99901634882654, EntityB, Packet(acknum=0, seqnum=0, checksum=0, payload=AAAAAAAAAAAAAAAAAAAA))
+FromLayer3(42.1867326525407, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(45.978060776414694, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+-------------------------
+EntityA.output called.
+eventlist
+-------------------------
+TimerEvent(29.828656569200106, EntityA)
+FromLayer5(29.89891652682662, EntityA)
+FromLayer3(32.352633898650495, EntityA, Packet(acknum=2, seqnum=0, checksum=0, payload=))
+FromLayer3(32.99901634882654, EntityB, Packet(acknum=0, seqnum=0, checksum=0, payload=AAAAAAAAAAAAAAAAAAAA))
+FromLayer3(42.1867326525407, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(45.978060776414694, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+-------------------------
+TimerEvent(29.828656569200106, EntityA)
+EntityA.timerinterrupt called.
+eventlist
+-------------------------
+FromLayer5(29.89891652682662, EntityA)
+FromLayer3(32.352633898650495, EntityA, Packet(acknum=2, seqnum=0, checksum=0, payload=))
+FromLayer3(32.99901634882654, EntityB, Packet(acknum=0, seqnum=0, checksum=0, payload=AAAAAAAAAAAAAAAAAAAA))
+FromLayer3(42.1867326525407, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(45.978060776414694, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+-------------------------
+eventlist
+-------------------------
+FromLayer5(29.89891652682662, EntityA)
+FromLayer3(32.352633898650495, EntityA, Packet(acknum=2, seqnum=0, checksum=0, payload=))
+FromLayer3(32.99901634882654, EntityB, Packet(acknum=0, seqnum=0, checksum=0, payload=AAAAAAAAAAAAAAAAAAAA))
+FromLayer3(42.1867326525407, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(45.978060776414694, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+-------------------------
+          TOLAYER3: packet being lost
+
+FromLayer5(29.89891652682662, EntityA)
+eventlist
+-------------------------
+FromLayer3(32.352633898650495, EntityA, Packet(acknum=2, seqnum=0, checksum=0, payload=))
+FromLayer3(32.99901634882654, EntityB, Packet(acknum=0, seqnum=0, checksum=0, payload=AAAAAAAAAAAAAAAAAAAA))
+FromLayer5(37.09596339086616, EntityA)
+FromLayer3(42.1867326525407, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(45.978060776414694, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+-------------------------
+EntityA.output called.
+eventlist
+-------------------------
+FromLayer3(32.352633898650495, EntityA, Packet(acknum=2, seqnum=0, checksum=0, payload=))
+FromLayer3(32.99901634882654, EntityB, Packet(acknum=0, seqnum=0, checksum=0, payload=AAAAAAAAAAAAAAAAAAAA))
+FromLayer5(37.09596339086616, EntityA)
+FromLayer3(42.1867326525407, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(45.978060776414694, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+-------------------------
+FromLayer3(32.352633898650495, EntityA, Packet(acknum=2, seqnum=0, checksum=0, payload=))
+EntityA.input called.
+eventlist
+-------------------------
+FromLayer3(32.99901634882654, EntityB, Packet(acknum=0, seqnum=0, checksum=0, payload=AAAAAAAAAAAAAAAAAAAA))
+FromLayer5(37.09596339086616, EntityA)
+FromLayer3(42.1867326525407, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+TimerEvent(42.352633898650495, EntityA)
+FromLayer3(45.978060776414694, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+-------------------------
+FromLayer3(32.99901634882654, EntityB, Packet(acknum=0, seqnum=0, checksum=0, payload=AAAAAAAAAAAAAAAAAAAA))
+EntityB.input called.
+FromLayer5(37.09596339086616, EntityA)
+eventlist
+-------------------------
+FromLayer5(37.10739158401044, EntityA)
+FromLayer3(42.1867326525407, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+TimerEvent(42.352633898650495, EntityA)
+FromLayer3(45.978060776414694, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+-------------------------
+EntityA.output called.
+eventlist
+-------------------------
+FromLayer5(37.10739158401044, EntityA)
+FromLayer3(42.1867326525407, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+TimerEvent(42.352633898650495, EntityA)
+FromLayer3(45.978060776414694, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+-------------------------
+FromLayer5(37.10739158401044, EntityA)
+eventlist
+-------------------------
+FromLayer5(40.359435211484346, EntityA)
+FromLayer3(42.1867326525407, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+TimerEvent(42.352633898650495, EntityA)
+FromLayer3(45.978060776414694, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+-------------------------
+EntityA.output called.
+eventlist
+-------------------------
+FromLayer5(40.359435211484346, EntityA)
+FromLayer3(42.1867326525407, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+TimerEvent(42.352633898650495, EntityA)
+FromLayer3(45.978060776414694, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+-------------------------
+FromLayer5(40.359435211484346, EntityA)
+eventlist
+-------------------------
+FromLayer3(42.1867326525407, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+TimerEvent(42.352633898650495, EntityA)
+FromLayer5(42.745594497636546, EntityA)
+FromLayer3(45.978060776414694, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+-------------------------
+EntityA.output called.
+eventlist
+-------------------------
+FromLayer3(42.1867326525407, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+TimerEvent(42.352633898650495, EntityA)
+FromLayer5(42.745594497636546, EntityA)
+FromLayer3(45.978060776414694, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+-------------------------
+FromLayer3(42.1867326525407, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+EntityB.input called.
+TimerEvent(42.352633898650495, EntityA)
+EntityA.timerinterrupt called.
+          TOLAYER3: packet being lost
+
+eventlist
+-------------------------
+FromLayer5(42.745594497636546, EntityA)
+FromLayer3(45.978060776414694, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+-------------------------
+          TOLAYER3: packet being lost
+
+eventlist
+-------------------------
+FromLayer5(42.745594497636546, EntityA)
+FromLayer3(45.978060776414694, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+-------------------------
+eventlist
+-------------------------
+FromLayer5(42.745594497636546, EntityA)
+FromLayer3(45.978060776414694, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+-------------------------
+eventlist
+-------------------------
+FromLayer5(42.745594497636546, EntityA)
+FromLayer3(45.978060776414694, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+-------------------------
+FromLayer5(42.745594497636546, EntityA)
+eventlist
+-------------------------
+FromLayer3(45.978060776414694, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer5(48.70846311346761, EntityA)
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+-------------------------
+EntityA.output called.
+eventlist
+-------------------------
+FromLayer3(45.978060776414694, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer5(48.70846311346761, EntityA)
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+-------------------------
+FromLayer3(45.978060776414694, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+EntityB.input called.
+          TOLAYER3: packet being lost
+
+FromLayer5(48.70846311346761, EntityA)
+eventlist
+-------------------------
+FromLayer5(50.57575839602316, EntityA)
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+-------------------------
+EntityA.output called.
+eventlist
+-------------------------
+FromLayer5(50.57575839602316, EntityA)
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+-------------------------
+FromLayer5(50.57575839602316, EntityA)
+eventlist
+-------------------------
+FromLayer5(51.474002007979095, EntityA)
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+-------------------------
+EntityA.output called.
+eventlist
+-------------------------
+FromLayer5(51.474002007979095, EntityA)
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+-------------------------
+FromLayer5(51.474002007979095, EntityA)
+eventlist
+-------------------------
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer5(59.898604239380916, EntityA)
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+-------------------------
+EntityA.output called.
+eventlist
+-------------------------
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer5(59.898604239380916, EntityA)
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+-------------------------
+FromLayer3(52.476043537408906, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+EntityB.input called.
+eventlist
+-------------------------
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+FromLayer3(59.82359413609856, EntityA, Packet(acknum=4, seqnum=0, checksum=0, payload=))
+FromLayer5(59.898604239380916, EntityA)
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+-------------------------
+FromLayer3(57.76913152638336, EntityB, Packet(acknum=1, seqnum=1, checksum=0, payload=BBBBBBBBBBBBBBBBBBBB))
+EntityB.input called.
+FromLayer3(59.82359413609856, EntityA, Packet(acknum=4, seqnum=0, checksum=0, payload=))
+EntityA.input called.
+FromLayer5(59.898604239380916, EntityA)
+eventlist
+-------------------------
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer5(68.0148913244597, EntityA)
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+-------------------------
+EntityA.output called.
+eventlist
+-------------------------
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+FromLayer5(68.0148913244597, EntityA)
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+-------------------------
+FromLayer3(66.01438196950056, EntityB, Packet(acknum=2, seqnum=2, checksum=0, payload=CCCCCCCCCCCCCCCCCCCC))
+EntityB.input called.
+FromLayer5(68.0148913244597, EntityA)
+eventlist
+-------------------------
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+FromLayer5(77.5125400567809, EntityA)
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+-------------------------
+EntityA.output called.
+eventlist
+-------------------------
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+FromLayer5(77.5125400567809, EntityA)
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+-------------------------
+FromLayer3(74.43798676383466, EntityB, Packet(acknum=4, seqnum=4, checksum=0, payload=EEEEEEEEEEEEEEEEEEEE))
+EntityB.input called.
+eventlist
+-------------------------
+FromLayer5(77.5125400567809, EntityA)
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(83.69045772536177, EntityA, Packet(acknum=5, seqnum=0, checksum=0, payload=))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+-------------------------
+FromLayer5(77.5125400567809, EntityA)
+eventlist
+-------------------------
+FromLayer5(78.33626993874738, EntityA)
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(83.69045772536177, EntityA, Packet(acknum=5, seqnum=0, checksum=0, payload=))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+-------------------------
+EntityA.output called.
+eventlist
+-------------------------
+FromLayer5(78.33626993874738, EntityA)
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(83.69045772536177, EntityA, Packet(acknum=5, seqnum=0, checksum=0, payload=))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+-------------------------
+FromLayer5(78.33626993874738, EntityA)
+eventlist
+-------------------------
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(83.69045772536177, EntityA, Packet(acknum=5, seqnum=0, checksum=0, payload=))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer5(86.78704569546252, EntityA)
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+-------------------------
+EntityA.output called.
+          TOLAYER3: packet being corrupted
+eventlist
+-------------------------
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(83.69045772536177, EntityA, Packet(acknum=5, seqnum=0, checksum=0, payload=))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer5(86.78704569546252, EntityA)
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+-------------------------
+FromLayer3(83.24641174326969, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+EntityB.input called.
+eventlist
+-------------------------
+FromLayer3(83.69045772536177, EntityA, Packet(acknum=5, seqnum=0, checksum=0, payload=))
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer5(86.78704569546252, EntityA)
+FromLayer3(87.68328306833867, EntityA, Packet(acknum=6, seqnum=0, checksum=0, payload=))
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+-------------------------
+FromLayer3(83.69045772536177, EntityA, Packet(acknum=5, seqnum=0, checksum=0, payload=))
+EntityA.input called.
+FromLayer3(85.9660155667912, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+EntityB.input called.
+          TOLAYER3: packet being lost
+
+FromLayer5(86.78704569546252, EntityA)
+eventlist
+-------------------------
+FromLayer3(87.68328306833867, EntityA, Packet(acknum=6, seqnum=0, checksum=0, payload=))
+FromLayer5(88.25063058458556, EntityA)
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+-------------------------
+EntityA.output called.
+eventlist
+-------------------------
+FromLayer3(87.68328306833867, EntityA, Packet(acknum=6, seqnum=0, checksum=0, payload=))
+FromLayer5(88.25063058458556, EntityA)
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+-------------------------
+FromLayer3(87.68328306833867, EntityA, Packet(acknum=6, seqnum=0, checksum=0, payload=))
+EntityA.input called.
+FromLayer5(88.25063058458556, EntityA)
+eventlist
+-------------------------
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer5(97.35079073157596, EntityA)
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+-------------------------
+EntityA.output called.
+          TOLAYER3: packet being corrupted
+eventlist
+-------------------------
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer5(97.35079073157596, EntityA)
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+FromLayer3(186.16995250149773, EntityB, Packet(acknum=17, seqnum=17, checksum=0, payload=ZRRRRRRRRRRRRRRRRRRR))
+-------------------------
+FromLayer3(94.19463079031003, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+EntityB.input called.
+eventlist
+-------------------------
+FromLayer5(97.35079073157596, EntityA)
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(100.3782073225939, EntityA, Packet(acknum=8, seqnum=0, checksum=0, payload=))
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+FromLayer3(186.16995250149773, EntityB, Packet(acknum=17, seqnum=17, checksum=0, payload=ZRRRRRRRRRRRRRRRRRRR))
+-------------------------
+FromLayer5(97.35079073157596, EntityA)
+eventlist
+-------------------------
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(100.3782073225939, EntityA, Packet(acknum=8, seqnum=0, checksum=0, payload=))
+FromLayer5(101.05219013492783, EntityA)
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+FromLayer3(186.16995250149773, EntityB, Packet(acknum=17, seqnum=17, checksum=0, payload=ZRRRRRRRRRRRRRRRRRRR))
+-------------------------
+EntityA.output called.
+          TOLAYER3: packet being corrupted
+eventlist
+-------------------------
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+FromLayer3(100.3782073225939, EntityA, Packet(acknum=8, seqnum=0, checksum=0, payload=))
+FromLayer5(101.05219013492783, EntityA)
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+FromLayer3(186.16995250149773, EntityB, Packet(acknum=17, seqnum=17, checksum=0, payload=ZRRRRRRRRRRRRRRRRRRR))
+FromLayer3(187.49748084000112, EntityB, Packet(acknum=999999, seqnum=18, checksum=0, payload=SSSSSSSSSSSSSSSSSSSS))
+-------------------------
+FromLayer3(99.7660965729952, EntityB, Packet(acknum=3, seqnum=3, checksum=0, payload=DDDDDDDDDDDDDDDDDDDD))
+EntityB.input called.
+FromLayer3(100.3782073225939, EntityA, Packet(acknum=8, seqnum=0, checksum=0, payload=))
+EntityA.input called.
+FromLayer5(101.05219013492783, EntityA)
+eventlist
+-------------------------
+FromLayer5(102.90190954890221, EntityA)
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+FromLayer3(186.16995250149773, EntityB, Packet(acknum=17, seqnum=17, checksum=0, payload=ZRRRRRRRRRRRRRRRRRRR))
+FromLayer3(187.49748084000112, EntityB, Packet(acknum=999999, seqnum=18, checksum=0, payload=SSSSSSSSSSSSSSSSSSSS))
+-------------------------
+EntityA.output called.
+          TOLAYER3: packet being lost
+
+FromLayer5(102.90190954890221, EntityA)
+eventlist
+-------------------------
+FromLayer5(105.00767464776868, EntityA)
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+FromLayer3(186.16995250149773, EntityB, Packet(acknum=17, seqnum=17, checksum=0, payload=ZRRRRRRRRRRRRRRRRRRR))
+FromLayer3(187.49748084000112, EntityB, Packet(acknum=999999, seqnum=18, checksum=0, payload=SSSSSSSSSSSSSSSSSSSS))
+-------------------------
+EntityA.output called.
+          TOLAYER3: packet being corrupted
+eventlist
+-------------------------
+FromLayer5(105.00767464776868, EntityA)
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+FromLayer3(186.16995250149773, EntityB, Packet(acknum=17, seqnum=17, checksum=0, payload=ZRRRRRRRRRRRRRRRRRRR))
+FromLayer3(187.49748084000112, EntityB, Packet(acknum=999999, seqnum=18, checksum=0, payload=SSSSSSSSSSSSSSSSSSSS))
+FromLayer3(196.93020326780234, EntityB, Packet(acknum=20, seqnum=20, checksum=0, payload=ZUUUUUUUUUUUUUUUUUUU))
+-------------------------
+FromLayer5(105.00767464776868, EntityA)
+eventlist
+-------------------------
+FromLayer5(106.02267684151037, EntityA)
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+FromLayer3(186.16995250149773, EntityB, Packet(acknum=17, seqnum=17, checksum=0, payload=ZRRRRRRRRRRRRRRRRRRR))
+FromLayer3(187.49748084000112, EntityB, Packet(acknum=999999, seqnum=18, checksum=0, payload=SSSSSSSSSSSSSSSSSSSS))
+FromLayer3(196.93020326780234, EntityB, Packet(acknum=20, seqnum=20, checksum=0, payload=ZUUUUUUUUUUUUUUUUUUU))
+-------------------------
+EntityA.output called.
+eventlist
+-------------------------
+FromLayer5(106.02267684151037, EntityA)
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+FromLayer3(186.16995250149773, EntityB, Packet(acknum=17, seqnum=17, checksum=0, payload=ZRRRRRRRRRRRRRRRRRRR))
+FromLayer3(187.49748084000112, EntityB, Packet(acknum=999999, seqnum=18, checksum=0, payload=SSSSSSSSSSSSSSSSSSSS))
+FromLayer3(196.93020326780234, EntityB, Packet(acknum=20, seqnum=20, checksum=0, payload=ZUUUUUUUUUUUUUUUUUUU))
+FromLayer3(199.9176667096492, EntityB, Packet(acknum=21, seqnum=21, checksum=0, payload=VVVVVVVVVVVVVVVVVVVV))
+-------------------------
+FromLayer5(106.02267684151037, EntityA)
+eventlist
+-------------------------
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+FromLayer5(109.5256165154757, EntityA)
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+FromLayer3(186.16995250149773, EntityB, Packet(acknum=17, seqnum=17, checksum=0, payload=ZRRRRRRRRRRRRRRRRRRR))
+FromLayer3(187.49748084000112, EntityB, Packet(acknum=999999, seqnum=18, checksum=0, payload=SSSSSSSSSSSSSSSSSSSS))
+FromLayer3(196.93020326780234, EntityB, Packet(acknum=20, seqnum=20, checksum=0, payload=ZUUUUUUUUUUUUUUUUUUU))
+FromLayer3(199.9176667096492, EntityB, Packet(acknum=21, seqnum=21, checksum=0, payload=VVVVVVVVVVVVVVVVVVVV))
+-------------------------
+EntityA.output called.
+          TOLAYER3: packet being lost
+
+FromLayer3(107.1251492617972, EntityB, Packet(acknum=5, seqnum=5, checksum=0, payload=FFFFFFFFFFFFFFFFFFFF))
+EntityB.input called.
+FromLayer5(109.5256165154757, EntityA)
+eventlist
+-------------------------
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+FromLayer5(114.56198156757458, EntityA)
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+FromLayer3(186.16995250149773, EntityB, Packet(acknum=17, seqnum=17, checksum=0, payload=ZRRRRRRRRRRRRRRRRRRR))
+FromLayer3(187.49748084000112, EntityB, Packet(acknum=999999, seqnum=18, checksum=0, payload=SSSSSSSSSSSSSSSSSSSS))
+FromLayer3(196.93020326780234, EntityB, Packet(acknum=20, seqnum=20, checksum=0, payload=ZUUUUUUUUUUUUUUUUUUU))
+FromLayer3(199.9176667096492, EntityB, Packet(acknum=21, seqnum=21, checksum=0, payload=VVVVVVVVVVVVVVVVVVVV))
+-------------------------
+EntityA.output called.
+          TOLAYER3: packet being lost
+
+FromLayer3(112.98770172453013, EntityB, Packet(acknum=6, seqnum=6, checksum=0, payload=GGGGGGGGGGGGGGGGGGGG))
+EntityB.input called.
+FromLayer5(114.56198156757458, EntityA)
+eventlist
+-------------------------
+FromLayer5(115.57119397946424, EntityA)
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+FromLayer3(186.16995250149773, EntityB, Packet(acknum=17, seqnum=17, checksum=0, payload=ZRRRRRRRRRRRRRRRRRRR))
+FromLayer3(187.49748084000112, EntityB, Packet(acknum=999999, seqnum=18, checksum=0, payload=SSSSSSSSSSSSSSSSSSSS))
+FromLayer3(196.93020326780234, EntityB, Packet(acknum=20, seqnum=20, checksum=0, payload=ZUUUUUUUUUUUUUUUUUUU))
+FromLayer3(199.9176667096492, EntityB, Packet(acknum=21, seqnum=21, checksum=0, payload=VVVVVVVVVVVVVVVVVVVV))
+-------------------------
+EntityA.output called.
+eventlist
+-------------------------
+FromLayer5(115.57119397946424, EntityA)
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+FromLayer3(186.16995250149773, EntityB, Packet(acknum=17, seqnum=17, checksum=0, payload=ZRRRRRRRRRRRRRRRRRRR))
+FromLayer3(187.49748084000112, EntityB, Packet(acknum=999999, seqnum=18, checksum=0, payload=SSSSSSSSSSSSSSSSSSSS))
+FromLayer3(196.93020326780234, EntityB, Packet(acknum=20, seqnum=20, checksum=0, payload=ZUUUUUUUUUUUUUUUUUUU))
+FromLayer3(199.9176667096492, EntityB, Packet(acknum=21, seqnum=21, checksum=0, payload=VVVVVVVVVVVVVVVVVVVV))
+FromLayer3(202.71186882385277, EntityB, Packet(acknum=24, seqnum=24, checksum=0, payload=YYYYYYYYYYYYYYYYYYYY))
+-------------------------
+FromLayer5(115.57119397946424, EntityA)
+FromLayer3(119.27625530210905, EntityB, Packet(acknum=7, seqnum=7, checksum=0, payload=HHHHHHHHHHHHHHHHHHHH))
+EntityB.input called.
+FromLayer3(125.45711442959305, EntityB, Packet(acknum=8, seqnum=8, checksum=0, payload=IIIIIIIIIIIIIIIIIIII))
+EntityB.input called.
+eventlist
+-------------------------
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+FromLayer3(134.0020535163338, EntityA, Packet(acknum=9, seqnum=0, checksum=0, payload=))
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+FromLayer3(186.16995250149773, EntityB, Packet(acknum=17, seqnum=17, checksum=0, payload=ZRRRRRRRRRRRRRRRRRRR))
+FromLayer3(187.49748084000112, EntityB, Packet(acknum=999999, seqnum=18, checksum=0, payload=SSSSSSSSSSSSSSSSSSSS))
+FromLayer3(196.93020326780234, EntityB, Packet(acknum=20, seqnum=20, checksum=0, payload=ZUUUUUUUUUUUUUUUUUUU))
+FromLayer3(199.9176667096492, EntityB, Packet(acknum=21, seqnum=21, checksum=0, payload=VVVVVVVVVVVVVVVVVVVV))
+FromLayer3(202.71186882385277, EntityB, Packet(acknum=24, seqnum=24, checksum=0, payload=YYYYYYYYYYYYYYYYYYYY))
+-------------------------
+FromLayer3(132.36704893049972, EntityB, Packet(acknum=9, seqnum=9, checksum=0, payload=JJJJJJJJJJJJJJJJJJJJ))
+EntityB.input called.
+          TOLAYER3: packet being lost
+
+FromLayer3(134.0020535163338, EntityA, Packet(acknum=9, seqnum=0, checksum=0, payload=))
+EntityA.input called.
+FromLayer3(141.25798226790468, EntityB, Packet(acknum=10, seqnum=10, checksum=0, payload=KKKKKKKKKKKKKKKKKKKK))
+EntityB.input called.
+          TOLAYER3: packet being corrupted
+eventlist
+-------------------------
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+FromLayer3(150.95692239529333, EntityA, Packet(acknum=11, seqnum=0, checksum=0, payload=Z))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+FromLayer3(186.16995250149773, EntityB, Packet(acknum=17, seqnum=17, checksum=0, payload=ZRRRRRRRRRRRRRRRRRRR))
+FromLayer3(187.49748084000112, EntityB, Packet(acknum=999999, seqnum=18, checksum=0, payload=SSSSSSSSSSSSSSSSSSSS))
+FromLayer3(196.93020326780234, EntityB, Packet(acknum=20, seqnum=20, checksum=0, payload=ZUUUUUUUUUUUUUUUUUUU))
+FromLayer3(199.9176667096492, EntityB, Packet(acknum=21, seqnum=21, checksum=0, payload=VVVVVVVVVVVVVVVVVVVV))
+FromLayer3(202.71186882385277, EntityB, Packet(acknum=24, seqnum=24, checksum=0, payload=YYYYYYYYYYYYYYYYYYYY))
+-------------------------
+FromLayer3(150.56572422628628, EntityB, Packet(acknum=11, seqnum=11, checksum=0, payload=LLLLLLLLLLLLLLLLLLLL))
+EntityB.input called.
+eventlist
+-------------------------
+FromLayer3(150.95692239529333, EntityA, Packet(acknum=11, seqnum=0, checksum=0, payload=Z))
+FromLayer3(155.03773526500058, EntityA, Packet(acknum=12, seqnum=0, checksum=0, payload=))
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+FromLayer3(186.16995250149773, EntityB, Packet(acknum=17, seqnum=17, checksum=0, payload=ZRRRRRRRRRRRRRRRRRRR))
+FromLayer3(187.49748084000112, EntityB, Packet(acknum=999999, seqnum=18, checksum=0, payload=SSSSSSSSSSSSSSSSSSSS))
+FromLayer3(196.93020326780234, EntityB, Packet(acknum=20, seqnum=20, checksum=0, payload=ZUUUUUUUUUUUUUUUUUUU))
+FromLayer3(199.9176667096492, EntityB, Packet(acknum=21, seqnum=21, checksum=0, payload=VVVVVVVVVVVVVVVVVVVV))
+FromLayer3(202.71186882385277, EntityB, Packet(acknum=24, seqnum=24, checksum=0, payload=YYYYYYYYYYYYYYYYYYYY))
+-------------------------
+FromLayer3(150.95692239529333, EntityA, Packet(acknum=11, seqnum=0, checksum=0, payload=Z))
+EntityA.input called.
+FromLayer3(155.03773526500058, EntityA, Packet(acknum=12, seqnum=0, checksum=0, payload=))
+EntityA.input called.
+FromLayer3(159.62107493312635, EntityB, Packet(acknum=12, seqnum=12, checksum=0, payload=MMMMMMMMMMMMMMMMMMMM))
+EntityB.input called.
+          TOLAYER3: packet being corrupted
+eventlist
+-------------------------
+FromLayer3(164.60190123641806, EntityA, Packet(acknum=13, seqnum=0, checksum=0, payload=Z))
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+FromLayer3(186.16995250149773, EntityB, Packet(acknum=17, seqnum=17, checksum=0, payload=ZRRRRRRRRRRRRRRRRRRR))
+FromLayer3(187.49748084000112, EntityB, Packet(acknum=999999, seqnum=18, checksum=0, payload=SSSSSSSSSSSSSSSSSSSS))
+FromLayer3(196.93020326780234, EntityB, Packet(acknum=20, seqnum=20, checksum=0, payload=ZUUUUUUUUUUUUUUUUUUU))
+FromLayer3(199.9176667096492, EntityB, Packet(acknum=21, seqnum=21, checksum=0, payload=VVVVVVVVVVVVVVVVVVVV))
+FromLayer3(202.71186882385277, EntityB, Packet(acknum=24, seqnum=24, checksum=0, payload=YYYYYYYYYYYYYYYYYYYY))
+-------------------------
+FromLayer3(164.60190123641806, EntityA, Packet(acknum=13, seqnum=0, checksum=0, payload=Z))
+EntityA.input called.
+FromLayer3(164.67614289280675, EntityB, Packet(acknum=13, seqnum=13, checksum=0, payload=NNNNNNNNNNNNNNNNNNNN))
+EntityB.input called.
+eventlist
+-------------------------
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+FromLayer3(170.79815754852527, EntityA, Packet(acknum=14, seqnum=0, checksum=0, payload=))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+FromLayer3(186.16995250149773, EntityB, Packet(acknum=17, seqnum=17, checksum=0, payload=ZRRRRRRRRRRRRRRRRRRR))
+FromLayer3(187.49748084000112, EntityB, Packet(acknum=999999, seqnum=18, checksum=0, payload=SSSSSSSSSSSSSSSSSSSS))
+FromLayer3(196.93020326780234, EntityB, Packet(acknum=20, seqnum=20, checksum=0, payload=ZUUUUUUUUUUUUUUUUUUU))
+FromLayer3(199.9176667096492, EntityB, Packet(acknum=21, seqnum=21, checksum=0, payload=VVVVVVVVVVVVVVVVVVVV))
+FromLayer3(202.71186882385277, EntityB, Packet(acknum=24, seqnum=24, checksum=0, payload=YYYYYYYYYYYYYYYYYYYY))
+-------------------------
+FromLayer3(170.05414071052925, EntityB, Packet(acknum=14, seqnum=14, checksum=0, payload=OOOOOOOOOOOOOOOOOOOO))
+EntityB.input called.
+eventlist
+-------------------------
+FromLayer3(170.79815754852527, EntityA, Packet(acknum=14, seqnum=0, checksum=0, payload=))
+FromLayer3(175.01252269183763, EntityA, Packet(acknum=15, seqnum=0, checksum=0, payload=))
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+FromLayer3(186.16995250149773, EntityB, Packet(acknum=17, seqnum=17, checksum=0, payload=ZRRRRRRRRRRRRRRRRRRR))
+FromLayer3(187.49748084000112, EntityB, Packet(acknum=999999, seqnum=18, checksum=0, payload=SSSSSSSSSSSSSSSSSSSS))
+FromLayer3(196.93020326780234, EntityB, Packet(acknum=20, seqnum=20, checksum=0, payload=ZUUUUUUUUUUUUUUUUUUU))
+FromLayer3(199.9176667096492, EntityB, Packet(acknum=21, seqnum=21, checksum=0, payload=VVVVVVVVVVVVVVVVVVVV))
+FromLayer3(202.71186882385277, EntityB, Packet(acknum=24, seqnum=24, checksum=0, payload=YYYYYYYYYYYYYYYYYYYY))
+-------------------------
+FromLayer3(170.79815754852527, EntityA, Packet(acknum=14, seqnum=0, checksum=0, payload=))
+EntityA.input called.
+FromLayer3(175.01252269183763, EntityA, Packet(acknum=15, seqnum=0, checksum=0, payload=))
+EntityA.input called.
+FromLayer3(177.6375436976469, EntityB, Packet(acknum=15, seqnum=15, checksum=0, payload=ZPPPPPPPPPPPPPPPPPPP))
+EntityB.input called.
+          TOLAYER3: packet being corrupted
+eventlist
+-------------------------
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+FromLayer3(183.6829456673286, EntityA, Packet(acknum=15, seqnum=0, checksum=0, payload=Z))
+FromLayer3(186.16995250149773, EntityB, Packet(acknum=17, seqnum=17, checksum=0, payload=ZRRRRRRRRRRRRRRRRRRR))
+FromLayer3(187.49748084000112, EntityB, Packet(acknum=999999, seqnum=18, checksum=0, payload=SSSSSSSSSSSSSSSSSSSS))
+FromLayer3(196.93020326780234, EntityB, Packet(acknum=20, seqnum=20, checksum=0, payload=ZUUUUUUUUUUUUUUUUUUU))
+FromLayer3(199.9176667096492, EntityB, Packet(acknum=21, seqnum=21, checksum=0, payload=VVVVVVVVVVVVVVVVVVVV))
+FromLayer3(202.71186882385277, EntityB, Packet(acknum=24, seqnum=24, checksum=0, payload=YYYYYYYYYYYYYYYYYYYY))
+-------------------------
+FromLayer3(179.0446503084374, EntityB, Packet(acknum=16, seqnum=16, checksum=0, payload=QQQQQQQQQQQQQQQQQQQQ))
+EntityB.input called.
+eventlist
+-------------------------
+FromLayer3(183.6829456673286, EntityA, Packet(acknum=15, seqnum=0, checksum=0, payload=Z))
+FromLayer3(185.09421410944435, EntityA, Packet(acknum=15, seqnum=0, checksum=0, payload=))
+FromLayer3(186.16995250149773, EntityB, Packet(acknum=17, seqnum=17, checksum=0, payload=ZRRRRRRRRRRRRRRRRRRR))
+FromLayer3(187.49748084000112, EntityB, Packet(acknum=999999, seqnum=18, checksum=0, payload=SSSSSSSSSSSSSSSSSSSS))
+FromLayer3(196.93020326780234, EntityB, Packet(acknum=20, seqnum=20, checksum=0, payload=ZUUUUUUUUUUUUUUUUUUU))
+FromLayer3(199.9176667096492, EntityB, Packet(acknum=21, seqnum=21, checksum=0, payload=VVVVVVVVVVVVVVVVVVVV))
+FromLayer3(202.71186882385277, EntityB, Packet(acknum=24, seqnum=24, checksum=0, payload=YYYYYYYYYYYYYYYYYYYY))
+-------------------------
+FromLayer3(183.6829456673286, EntityA, Packet(acknum=15, seqnum=0, checksum=0, payload=Z))
+EntityA.input called.
+FromLayer3(185.09421410944435, EntityA, Packet(acknum=15, seqnum=0, checksum=0, payload=))
+EntityA.input called.
+FromLayer3(186.16995250149773, EntityB, Packet(acknum=17, seqnum=17, checksum=0, payload=ZRRRRRRRRRRRRRRRRRRR))
+EntityB.input called.
+eventlist
+-------------------------
+FromLayer3(187.49748084000112, EntityB, Packet(acknum=999999, seqnum=18, checksum=0, payload=SSSSSSSSSSSSSSSSSSSS))
+FromLayer3(195.74811655994793, EntityA, Packet(acknum=15, seqnum=0, checksum=0, payload=))
+FromLayer3(196.93020326780234, EntityB, Packet(acknum=20, seqnum=20, checksum=0, payload=ZUUUUUUUUUUUUUUUUUUU))
+FromLayer3(199.9176667096492, EntityB, Packet(acknum=21, seqnum=21, checksum=0, payload=VVVVVVVVVVVVVVVVVVVV))
+FromLayer3(202.71186882385277, EntityB, Packet(acknum=24, seqnum=24, checksum=0, payload=YYYYYYYYYYYYYYYYYYYY))
+-------------------------
+FromLayer3(187.49748084000112, EntityB, Packet(acknum=999999, seqnum=18, checksum=0, payload=SSSSSSSSSSSSSSSSSSSS))
+EntityB.input called.
+eventlist
+-------------------------
+FromLayer3(195.74811655994793, EntityA, Packet(acknum=15, seqnum=0, checksum=0, payload=))
+FromLayer3(196.93020326780234, EntityB, Packet(acknum=20, seqnum=20, checksum=0, payload=ZUUUUUUUUUUUUUUUUUUU))
+FromLayer3(199.9176667096492, EntityB, Packet(acknum=21, seqnum=21, checksum=0, payload=VVVVVVVVVVVVVVVVVVVV))
+FromLayer3(199.98092733523166, EntityA, Packet(acknum=15, seqnum=0, checksum=0, payload=))
+FromLayer3(202.71186882385277, EntityB, Packet(acknum=24, seqnum=24, checksum=0, payload=YYYYYYYYYYYYYYYYYYYY))
+-------------------------
+FromLayer3(195.74811655994793, EntityA, Packet(acknum=15, seqnum=0, checksum=0, payload=))
+EntityA.input called.
+FromLayer3(196.93020326780234, EntityB, Packet(acknum=20, seqnum=20, checksum=0, payload=ZUUUUUUUUUUUUUUUUUUU))
+EntityB.input called.
+eventlist
+-------------------------
+FromLayer3(199.9176667096492, EntityB, Packet(acknum=21, seqnum=21, checksum=0, payload=VVVVVVVVVVVVVVVVVVVV))
+FromLayer3(199.98092733523166, EntityA, Packet(acknum=15, seqnum=0, checksum=0, payload=))
+FromLayer3(202.71186882385277, EntityB, Packet(acknum=24, seqnum=24, checksum=0, payload=YYYYYYYYYYYYYYYYYYYY))
+FromLayer3(206.57061894579965, EntityA, Packet(acknum=15, seqnum=0, checksum=0, payload=))
+-------------------------
+FromLayer3(199.9176667096492, EntityB, Packet(acknum=21, seqnum=21, checksum=0, payload=VVVVVVVVVVVVVVVVVVVV))
+EntityB.input called.
+eventlist
+-------------------------
+FromLayer3(199.98092733523166, EntityA, Packet(acknum=15, seqnum=0, checksum=0, payload=))
+FromLayer3(202.71186882385277, EntityB, Packet(acknum=24, seqnum=24, checksum=0, payload=YYYYYYYYYYYYYYYYYYYY))
+FromLayer3(206.57061894579965, EntityA, Packet(acknum=15, seqnum=0, checksum=0, payload=))
+FromLayer3(211.30038084029488, EntityA, Packet(acknum=15, seqnum=0, checksum=0, payload=))
+-------------------------
+FromLayer3(199.98092733523166, EntityA, Packet(acknum=15, seqnum=0, checksum=0, payload=))
+EntityA.input called.
+FromLayer3(202.71186882385277, EntityB, Packet(acknum=24, seqnum=24, checksum=0, payload=YYYYYYYYYYYYYYYYYYYY))
+EntityB.input called.
+          TOLAYER3: packet being lost
+
+FromLayer3(206.57061894579965, EntityA, Packet(acknum=15, seqnum=0, checksum=0, payload=))
+EntityA.input called.
+FromLayer3(211.30038084029488, EntityA, Packet(acknum=15, seqnum=0, checksum=0, payload=))
+EntityA.input called.
+ Simulator terminated at time 211.30038084029488
+ after sending 25 from layer5
